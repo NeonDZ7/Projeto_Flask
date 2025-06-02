@@ -37,6 +37,13 @@ A API do Gemini foi integrada via biblioteca `google.generativeai`. A chave é a
 - `glossario.csv`: Base com os termos.
 - `.env`: Armazena a chave da API.
 
+
+## 🎥 Apresentação do Projeto
+
+Assista à demonstração do funcionamento do site clicando no link abaixo:
+
+👉 [Ver vídeo da apresentação no Google Drive]([https://drive.google.com/SEU-LINK-AQUI](https://drive.google.com/file/d/1iaTD81m8Q23x13XzcC6UgJcc2BoO6Wkd/view?usp=sharing))
+
 ---
 
 Obrigado por visitar!
