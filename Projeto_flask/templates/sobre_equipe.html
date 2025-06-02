@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Sobre a Equipe - Fundamentos de Python{% endblock %}
+
+{% block content %}
+    <style>
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 3em;
+            color: #a07c2c;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 1.15em;
+            line-height: 1.7;
+            color: #dcdcdc;
+            margin-bottom: 18px;
+            text-align: justify;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        p strong {
+            color: #a07c2c;
+            font-weight: 700;
+            font-style: italic;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+        }
+
+        .social-links p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.2em;
+            color: #a07c2c;
+            margin-bottom: 10px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+        }
+
+        .social-links a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #a07c2c;
+            margin: 0 12px;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.3s ease;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
+        }
+
+        .social-links a:hover {
+            color: #ffffff;
+            transform: scale(1.15);
+            text-shadow: 2px 2px 5px rgba(255,255,255,0.8);
+        }
+    </style>
+
+    <div class="container">
+        <h1>Sobre Mim</h1>
+        <p>Seja bem-vindo(a)! Meu nome é <strong>Miguel</strong> e sou o idealizador, desenvolvedor e responsável por todo o conteúdo deste site. Este projeto foi concebido com o propósito de oferecer uma fonte de aprendizado acessível e didática para aqueles que estão iniciando sua jornada no mundo da programação, especialmente com a linguagem Python.</p>
+
+        <p>Atuo de forma independente em todas as etapas do desenvolvimento: desde o planejamento da estrutura do site, criação do layout, programação com o framework Flask, até a elaboração dos conteúdos e exemplos práticos. Cada detalhe foi pensado com o intuito de tornar a experiência do usuário o mais intuitiva e produtiva possível.</p>
+
+        <p>Este trabalho também representa uma oportunidade pessoal de aprimoramento técnico e de contribuição para a comunidade de aprendizes e entusiastas da programação. Acredito no poder do conhecimento compartilhado e na importância de oferecer recursos educacionais que possam impactar positivamente a formação de novos programadores.</p>
+
+        <p>Agradeço sinceramente por visitar este espaço. Espero que o conteúdo aqui disponível seja útil, enriquecedor e que sirva de apoio em sua trajetória de estudos. Fique à vontade para explorar as seções, praticar com os materiais apresentados e acompanhar futuras atualizações.</p>
+        
+        <div class="social-links">
+            <p>Me acompanhe nas redes sociais:</p>
+            <a href="https://github.com/NeonDZ7" target="_blank">GitHub</a> |
+            <a href="https://www.instagram.com/zmiguel_silva/?utm_source=qr&igsh=djIzbDdmN3h2ZTg3" target="_blank">Instagram</a>
+        </div>
+    
+    </div>
+{% endblock %}

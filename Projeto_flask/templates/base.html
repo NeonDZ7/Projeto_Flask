@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+    <title>{% block title %}Seu Projeto{% endblock %}</title>
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <div class="nav-brand">
+                <a href="{{ url_for('home') }}">Python Essencial</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('sobre_equipe') }}">Sobre a Equipe</a></li>
+
+                <!-- Dropdown Conteúdo Python (links atualizados) -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Conteúdo Python &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('estruturas_selecao') }}">Estruturas de seleção</a>
+                        <a href="{{ url_for('estruturas_repeticao') }}">Estruturas de repetição</a>
+                        <a href="{{ url_for('vetores_matrizes') }}">Vetores e matrizes</a>
+                        <a href="{{ url_for('funcoes_procedimentos') }}">Funções e procedimentos</a>
+                        <a href="{{ url_for('tratamentos_excecao') }}">Tratamentos de exceção</a>
+                    </div>
+                </li>
+
+                <!-- Dropdown Dicionário de Termos (URLs já existentes mantidas) -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Dicionário de Termos &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="{{ url_for('index') }}">Visualizar Glossário</a>
+                        <a href="{{ url_for('novo_termo')}}">Novo Termo</a>
+                        <a href="{{ url_for('editar_termo')}}">Editar Termo</a>
+                        <a href="{{ url_for('deletar_termo')}}">deletar termo</a>
+                    </div>
+                </li>
+
+                <!-- Botão Pergunte ao Gemini -->
+                <li class="pergunte-gemini">
+                    <a href="{{ url_for('tirar_duvidas') }}">Pergunte ao Gemini</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        {# Seu rodapé (se tiver) #}
+    </footer>
+</body>
+</html>

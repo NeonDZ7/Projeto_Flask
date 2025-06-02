@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Tratamentos de Exceção - Fundamentos de Python{% endblock %}
+
+{% block content %}
+<div class="info-content">
+    <h1>Tratamentos de Exceção</h1>
+    <p><strong>Conceito:</strong><br>
+O tratamento de exceções é um mecanismo que permite ao programa lidar com erros e situações inesperadas durante sua execução sem que isso cause sua interrupção abrupta. Em Python, isso é feito utilizando os blocos <code>try</code>, <code>except</code>, <code>else</code> e <code>finally</code>.</p>
+
+<p>Quando um erro (exceção) ocorre dentro do bloco <code>try</code>, o fluxo do programa é desviado para o bloco <code>except</code> correspondente, que trata o erro. O bloco <code>else</code> é executado quando não há exceções, e o <code>finally</code> sempre é executado, independentemente do resultado, para garantir que operações de limpeza sejam feitas.</p>
+
+<p><strong>Aplicação:</strong><br>
+Tratamento de exceções é crucial em aplicações que lidam com dados externos, como arquivos, redes, banco de dados, ou entradas do usuário, que podem ser imprevisíveis. Um exemplo é tentar abrir um arquivo que pode não existir, ou converter uma entrada para número, onde erros são comuns.</p>
+
+<p>Com o tratamento adequado, programas tornam-se mais robustos, evitando falhas inesperadas, e podem informar o usuário com mensagens claras ou tomar ações corretivas.</p>
+
+<p><strong>Exemplo de código:</strong></p>
+<pre><code>try:
+    valor = int(input("Digite um número inteiro: "))
+    resultado = 10 / valor
+except ValueError:
+    print("Erro: valor digitado não é um número inteiro válido.")
+except ZeroDivisionError:
+    print("Erro: divisão por zero não é permitida.")
+else:
+    print(f"Resultado da divisão: {resultado}")
+finally:
+    print("Execução do bloco finally, recurso liberado ou processo finalizado.")</code></pre>
+
+<p><strong>Dicas importantes:</strong></p>
+<ul>
+<li>Trate apenas as exceções que você sabe como lidar adequadamente.</li>
+<li>Evite capturar exceções genéricas sem necessidade, pois isso pode esconder erros graves.</li>
+<li>Use o bloco <code>finally</code> para garantir a liberação de recursos, como arquivos ou conexões de banco.</li>
+<li>Logue os erros para facilitar a identificação e correção posterior.</li>
+<li>Planeje o tratamento de erros para proporcionar a
+</div>
+{% endblock %}
